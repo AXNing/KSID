@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 ### Testing
 
-Our pre-trained weights can be downloaded by clicking here. [pretrained model](https://drive.google.com/drive/folders/1AcfKzxens1mhs7IALtiPVyE60ZV-X_5n?usp=drive_link) and put it in the following folder:
+Our pre-trained weights can be downloaded by clicking [here](https://drive.google.com/drive/folders/1AcfKzxens1mhs7IALtiPVyE60ZV-X_5n?usp=drive_link), and put it in the following folder:
 
 ```
 ├── checkpoints

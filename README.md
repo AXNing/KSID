@@ -1,4 +1,4 @@
-# KSID
+# KAN See In the Dark [[paper]](https://arxiv.org/abs/2409.03404)
 ## Get Started
 ### Dependencies and Installation
 - Python 3.8
@@ -30,7 +30,8 @@ pip install -r requirements.txt
 ```
 
 ### Data Preparation
-
+#### Download the raw training and evaluation datasets
+[[Google Drive]](https://drive.google.com/drive/folders/1yAp7c-fQhU_KQkK7xk1KZ4YKAywwo-2z?usp=drive_link)
 
 ```
 ├── dataset
@@ -79,3 +80,7 @@ python test.py --dataset ./config/lolv1.yml --config ./config/lolv1_test.json
 python test.py --dataset ./config/lolv2_real.yml --config ./config/lolv2_real_test.json
 ```
 3. Evaluation metrics are referenced [here](https://github.com/chaofengc/IQA-PyTorch).
+### To Do List
+- [x] Release the testing code for KSID.
+- [x] Upload the pretrained checkpoints.
+- [ ] Release the training code for KSID.

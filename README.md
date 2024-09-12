@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 ### Testing
 
-Our pre-trained weights can be downloaded by clicking [here](https://drive.google.com/drive/folders/1AcfKzxens1mhs7IALtiPVyE60ZV-X_5n?usp=drive_link), and put it in the following folder:
+1. Our pre-trained weights can be downloaded by clicking [here](https://drive.google.com/drive/folders/1AcfKzxens1mhs7IALtiPVyE60ZV-X_5n?usp=drive_link), and put it in the following folder:
 
 ```
 ├── checkpoints
@@ -59,10 +59,23 @@ Our pre-trained weights can be downloaded by clicking [here](https://drive.googl
     ├── lolv2_real_gen.pth
     ├── lsrw_gen.pth
 ```
+2. Modifying the pre-trained weight path in the json file.
 
+```
+    "path": {
+        "log": "logs",
+        "tb_logger": "tb_logger",
+        "results": "results",
+        "checkpoint": "checkpoint", 
+        "resume_state": ""
+    },
+```
+   
 ```
 # LOLv1
 python test.py --dataset ./config/lolv1.yml --config ./config/lolv1_test.json
 
 # LOLv2-real
 python test.py --dataset ./config/lolv2_real.yml --config ./config/lolv2_real_test.json
+```
+3. Evaluation metrics are referenced [here](https://github.com/chaofengc/IQA-PyTorch).

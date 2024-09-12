@@ -6,7 +6,7 @@ from inspect import isfunction
 import cv2
 import numpy as np
 import sys
-from k_an import kan
+from .k_an import kan
 from wavelet import get_Fre,Inv_Fre
 def exists(x):
     return x is not None

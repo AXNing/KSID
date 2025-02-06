@@ -80,7 +80,15 @@ python test.py --dataset ./config/lolv1.yml --config ./config/lolv1_test.json
 python test.py --dataset ./config/lolv2_real.yml --config ./config/lolv2_real_test.json
 ```
 3. Evaluation metrics are referenced [here](https://github.com/chaofengc/IQA-PyTorch).
+
+### Training
+```
+sh train.sh
+```
 ### To Do List
 - [x] Release the testing code for KSID.
 - [x] Upload the pretrained checkpoints.
-- [ ] Release the training code for KSID.
+- [x] Release the training code for KSID.
+
+### Acknowledgement
+Our code is built upon [GSAD](https://github.com/jinnh/GSAD). Thanks to the contributors for their great work.

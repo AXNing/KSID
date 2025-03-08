@@ -82,9 +82,31 @@ python test.py --dataset ./config/lolv2_real.yml --config ./config/lolv2_real_te
 3. Evaluation metrics are referenced [here](https://github.com/chaofengc/IQA-PyTorch).
 
 ### Training
+
+#### train uncertainty model
 ```
-sh train.sh
+python train.py -uncertainty --config config/llie_train_u.json --dataset config/lolv1.yml
 ```
+
+
+#### train the second stage
+Modifying the uncertainty model weight path in the json file.
+
+```
+    "path": {
+        "log": "logs",
+        "tb_logger": "tb_logger",
+        "results": "results",
+        "checkpoint": "checkpoint", 
+        "resume_state": ""
+    },
+
+```
+```
+python train.py --config config/lolv1_train.json --dataset config/lolv1.yml
+```
+
+2.
 ### To Do List
 - [x] Release the testing code for KSID.
 - [x] Upload the pretrained checkpoints.
